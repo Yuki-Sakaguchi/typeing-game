@@ -1,0 +1,96 @@
+/* ==================
+    common
+
+    index
+        - text
+================== */
+html,
+body {
+    background: $C_BLACK;
+    font-family: $MAIN_FONT_FAMILY;
+}
+
+.main-box {
+    width: 100vw;
+    height: 100vh;
+    display: table;
+    background: $C_BASE;
+    position: relative;
+    color: $C_SUB0;
+
+    &.hinnshi {
+        color: $C_SUB1;
+    }
+
+    &.shibou {
+        color: $C_SUB2;
+    }
+
+    &.js-damage {
+        animation: 0.2s damage 2 forwards;
+    }
+}
+
+.text {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 5rem;
+    text-align: center;
+
+    span {
+        display: inline-block;
+        min-width: 20px;
+        transform: translateY(0);
+
+        &.is-true {
+            animation: 0.4s chikachika forwards;
+        }
+    }
+
+    &.is-success {
+        animation: 0.8s chikachika forwards;
+    }
+}
+
+.time {
+    &-wrap {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 1.6rem;
+    }
+}
+
+.left-nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 1.6rem;
+
+    &__item {
+        margin-bottom: 10px;
+
+        span {
+            width: 30px;
+            display: inline-block;
+            text-align: right;
+        }
+    }
+}
+
+.right-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.6rem;
+
+    &__item {
+        margin-bottom: 10px;
+
+        span {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+        }
+    }
+}

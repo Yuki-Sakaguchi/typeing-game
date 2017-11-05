@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ==================
+    base
+================== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.4em;
+  font-family: "Press Start 2P", cursive;
+}
+
+body,
+html {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: unset;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  body,
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* ==================
+    animation
+================== */
+@keyframes chikachika {
+  0%, 20%, 40%, 60% {
+    opacity: 1;
+  }
+  10%, 30%, 50%, 70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes damage {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-20px);
+  }
+  75% {
+    transform: translateX(20px);
+  }
+}
+
+/* ==================
+    common
+
+    index
+        - text
+================== */
+html,
+body {
+  background: black;
+  font-family: "Press Start 2P", cursive;
+}
+
+.main-box {
+  width: 100vw;
+  height: 100vh;
+  display: table;
+  background: #000;
+  position: relative;
+  color: #fff;
+}
+
+.main-box.hinnshi {
+  color: #F4906B;
+}
+
+.main-box.shibou {
+  color: #D32500;
+}
+
+.main-box.js-damage {
+  animation: 0.2s damage 2 forwards;
+}
+
+.text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.text span {
+  display: inline-block;
+  min-width: 20px;
+  transform: translateY(0);
+}
+
+.text span.is-true {
+  animation: 0.4s chikachika forwards;
+}
+
+.text.is-success {
+  animation: 0.8s chikachika forwards;
+}
+
+.time-wrap {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.6rem;
+}
+
+.left-nav {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1.6rem;
+}
+
+.left-nav__item {
+  margin-bottom: 10px;
+}
+
+.left-nav__item span {
+  width: 30px;
+  display: inline-block;
+  text-align: right;
+}
+
+.right-nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.6rem;
+}
+
+.right-nav__item {
+  margin-bottom: 10px;
+}
+
+.right-nav__item span {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+
+@media screen and (min-width: 780px) {
+  /* ==================
+    hover
+================== */
+  .fade-hover, .btn {
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  .fade-hover:hover, .btn:hover {
+    opacity: 0.6;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  /* ==================
+    tb
+
+    index
+        - btn
+================== */
+}
+
+@media screen and (max-width: 480px) {
+  /* ==================
+    sp
+
+    index
+        - btn
+================== */
+}

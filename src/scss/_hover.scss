@@ -1,0 +1,22 @@
+/* ==================
+    hover
+================== */
+
+// ==================
+//    extends
+// ==================
+.fade-hover {
+    opacity: 1;
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+// ==================
+//    setting
+// ==================
+.btn {
+    @extend .fade-hover;
+}

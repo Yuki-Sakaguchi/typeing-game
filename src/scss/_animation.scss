@@ -1,0 +1,26 @@
+/* ==================
+    animation
+================== */
+@keyframes chikachika {
+    0%, 20%, 40%, 60% {
+        opacity: 1;
+    }
+    10%, 30%, 50%, 70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+@keyframes damage {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-20px);
+    }
+    75% {
+        transform: translateX(20px);
+    }
+}

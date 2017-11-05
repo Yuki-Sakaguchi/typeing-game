@@ -1,0 +1,33 @@
+{
+  "name": "typing-game",
+  "version": "1.0.0",
+  "description": "タイピングゲーム",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "./node_modules/.bin/gulp",
+    "watch": "./node_modules/.bin/gulp watch",
+    "webserver": "./node_modules/.bin/gulp webserver",
+    "imagemin": "./node_modules/.bin/gulp imagemin"
+  },
+  "author": {
+    "name": "Yuki Sakaguchi",
+    "email": "test@email.com.com",
+    "url": "test.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "doiuse": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webserver": "^0.9.1",
+    "imagemin-pngquant": "^5.0.1",
+    "postcss-sorting": "^3.0.1"
+  }
+}

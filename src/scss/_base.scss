@@ -1,0 +1,26 @@
+/* ==================
+    base
+================== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // base font size = 10px
+    line-height: 1.4em;
+    font-family: $MAIN_FONT_FAMILY;
+}
+
+// 文字のアンチエイリアス
+body,
+html {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: unset;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    body,
+    html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
