@@ -1,2 +1,2 @@
 # タイピングゲーム
-https://yuki-sakaguchi.github.io/typeing-game/public/index.html
+https://yuki-sakaguchi.github.io/typeing-game/public/
