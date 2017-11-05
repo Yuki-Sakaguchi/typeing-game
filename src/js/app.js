@@ -144,6 +144,7 @@
         time = 0;
         score = 0;
         elScore.textContent = score;
+        elTimer.textContent = time;
         life = 2;
         isStop = false;
         window.removeEventListener('click', reset);
