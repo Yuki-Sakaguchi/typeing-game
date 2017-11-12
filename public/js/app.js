@@ -1,4 +1,4 @@
-(function() {
+(function(textList) {
     var elMainBox = {};
     var elLife = {};
     var elText = {};
@@ -13,7 +13,7 @@
     var timer;
 
     var checkTextList = [];
-    var targetTextList = [
+    var targetTextList = textList || [
         'javascript',
         'function',
         'alert',
@@ -144,9 +144,10 @@
         time = 0;
         score = 0;
         elScore.textContent = score;
+        elTimer.textContent = time;
         life = 2;
         isStop = false;
         window.removeEventListener('click', reset);
         init();
     }
-})();
+})(textList);
